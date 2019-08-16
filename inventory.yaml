@@ -1,6 +1,6 @@
 all:
   hosts:
     digidag01:
-      ansible_host: 172.28.24.96
+      ansible_host: 172.28.14.153
     digidag02:
       ansible_host: 172.28.34.108
