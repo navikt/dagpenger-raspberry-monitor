@@ -1,4 +1,4 @@
-# Aura's raspberry pi monitoring
+# Team Dagpenger's raspberry pi monitoring (forked from Aura)
 
 This provisioner will format your SD card with Raspbian, deploy a `wpa_supplicant.conf` file, and modify its `/etc/rc.local` so that the script `firstboot.sh` runs (on every boot).
 
