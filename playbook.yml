@@ -23,6 +23,16 @@
     lineinfile:
       dest: /boot/config.txt
       line: "hdmi_force_hotplug=1"
+  - name: HDMI group1 (ref https://elinux.org/RPiconfig#Video_mode_options)
+    become: true
+    lineinfile:
+      dest: /boot/config.txt
+      line: "hdmi_group=1"
+  - name: hdmi_mode=16 1920x1080 @ 60Hz 16:9
+    become: true
+    lineinfile:
+      dest: /boot/config.txt
+      line: "hdmi_mode=16"
   - name: Copy grafana_logo
     copy:
       src: grafana_logo.png
